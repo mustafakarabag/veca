@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_modify_event"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ee492.vecaapp.veca.ModifyEventActivity">
+
+
+    <Button
+        android:text="Geri"
+        android:textAllCaps = "false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/modifyBackButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/darker_gray" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:text="Tarih"
+        android:ems="10"
+        android:id="@+id/modifyDateText"
+        android:editable="false"
+        android:layout_below="@+id/modifyTitleText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@android:color/darker_gray"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/presence_audio_online"
+        android:id="@+id/modifyMic2ButtonActive"
+        android:background="@android:color/transparent"
+        android:scaleX="5"
+        android:scaleY="5"
+        android:visibility="invisible"
+        android:translationZ="2dp"
+        android:layout_alignTop="@+id/modifyMic2Button"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:text="Başlık"
+        android:ems="10"
+        android:id="@+id/modifyTitleText"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/systemLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@android:color/darker_gray"
+        android:editable="true" />
+
+    <TextView
+        android:text="Siz:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userLabel"
+        android:editable="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:enabled="true"
+        android:textColor="@android:color/background_dark" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/presence_audio_busy"
+        android:id="@+id/modifyMic2Button"
+        android:background="@android:color/transparent"
+        android:scaleX="5"
+        android:scaleY="5"
+        android:onClick="buttonMic2"
+        android:translationZ="2dp"
+        android:layout_alignLeft="@+id/modifyMic2ButtonActive"
+        android:layout_alignStart="@+id/modifyMic2ButtonActive"
+        android:layout_centerVertical="false"
+        android:layout_above="@+id/modifyBackButton" />
+
+    <TextView
+        android:text="Yaver:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/systemLabel"
+        android:layout_marginTop="23dp"
+        android:editable="false"
+        android:enabled="true"
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@+id/userLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/systemResponseTextLabel2"
+        android:editable="false"
+        android:layout_toRightOf="@+id/systemLabel"
+        android:layout_toEndOf="@+id/systemLabel"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignTop="@+id/systemLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userResponseTextLabel2"
+        android:editable="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/systemResponseTextLabel2"
+        android:layout_alignStart="@+id/systemResponseTextLabel2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:text="Saat"
+        android:ems="10"
+        android:id="@+id/modifyTimeText"
+        android:editable="false"
+        android:layout_below="@+id/modifyDateText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/modifyExistingEvents"
+        android:minHeight="150sp"
+        android:minLines="3"
+        android:minWidth="250sp"
+        android:maxHeight="150sp"
+        android:maxWidth="250sp"
+        android:textSize="16sp"
+        android:maxLines = "50"
+        android:scrollbars = "vertical"
+        android:layout_below="@+id/modifyTimeText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

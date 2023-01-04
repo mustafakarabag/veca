@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="unknown">Söylediğinizi anlayamadım.</string>
+  <string name="welcome">Merhaba</string>
+  <string name="zerothstage">Lütfen, komutunuzu tekrar edebilir misiniz?</string>
+  <string name="saydate">Lütfen, tarihi söyleyiniz.</string>
+    <string name="saydateadv">#name# etkinliği hangi tarihte?</string>
+    <string name="saydateadvreminder">#name# size hangi tarihte hatırlatılsın?</string>
+    <string name="datechangedadv">Etkinlik tarihi #date# olarak değiştirildi.</string>
+    <string name="datechangedadvreminder">Hatırlatıcı tarihi #date# olarak değiştirildi.</string>
+  <string name="saytime">Lütfen, saati söyleyiniz.</string>
+    <string name="saytimeadv">#date# tarihindeki etkinlik saat kaçta?</string>
+    <string name="saytimeadvreminder">#date# tarihindeki hatırlatıcıyı saat kaça kurmak istiyorsunuz?</string>
+  <string name="saytitle">Lütfen, başlığı söyleyiniz.</string>
+    <string name="saytitlereminder">Neyi hatırlatmamı istiyorsunuz?</string>
+    <string name="timechangedadv">Etkinlik saati #time# olarak değiştirildi.</string>
+    <string name="timechangedadvreminder">Hatırlatıcı saati #time# olarak değiştirildi.</string>
+  <string name="conflictfound">Belirtilen gün ve saat ile çakışan etkinliğiniz bulunmakta. </string>
+  <string name="wanttosave">Etkinliği kaydetmek istiyor musunuz?</string>
+    <string name="wanttosavereminder">Hatırlatıcıyı kaydetmek istiyor musunuz?</string>
+  <string name="eventsaved">Etkinlik kaydedildi.</string>
+    <string name="eventsavedreminder">Hatırlatıcı kaydedildi.</string>
+  <string name="wanttocancel">Etkinliği iptal etmek mi istiyorsunuz?</string>
+    <string name="wanttocancelreminder">Hatırlatıcıyı iptal etmek mi istiyorsunuz?</string>
+  <string name="eventcancelled">Etkinlik iptal edildi.</string>
+    <string name="eventcancelledreminder">Hatırlatıcı iptal edildi.</string>
+    <string name="eventcancelleddelete">Silme işlemi iptal edildi.</string>
+    <string name="eventdeleted">Etkinlik silindi.</string>
+    <string name="eventdeletedreminder">Hatırlatıcı silindi.</string>
+  <string name="saytitleofevent">Lütfen seçmek istediğiniz etkinliğin adını söyleyiniz.</string>
+  <string name="titlenotfound">Söylediğiniz başlığa sahip etkinlik bulunamadı.</string>
+  <string name="eventselection">Söylediğiniz başlığa sahip etkinlikler listelendi. Lütfen seçmek istediğiniz etkinliğin tam adını söyleyin.</string>
+  <string name="eventselected">#date# tarihindeki #name# etkinliği düzenlenmek için seçildi.</string>
+  <string name="eventselecteddelete">#date# tarihindeki #name# etkinliği silinmek için seçildi. Bu etkinliği silmek istediğinize emin misiniz?</string>
+  <string name="wanttocanceldelete">Silme işlemini iptal etmek mi istiyorsunuz?</string>
+  <string name="fieldtobechanged">Lütfen değiştirmek istediğiniz alanı söyleyiniz.</string>
+  <string name="datechanged">Etkinlik tarihi #date# olarak değiştirildi.</string>
+  <string name="titlechanged">Etkinlik başlığı #title# olarak değiştirildi.</string>
+  <string name="timechanged">Etkinlik saati #time# olarak değiştirildi.</string>
+  <string name="morechanges">Başka bir değişiklik yapmak istiyor musunuz?</string>
+  <string name="twoeventsfound">Bulunan etkinlikler #event1# ve #event2# . Lütfen seçmek istediğiniz etkinliğin tam adını söyleyin.</string>
+
+  <string name="helpcommands">Yaver, Android platformu için geliştirilmiş Google Takvim uygulaması ile birlikte çalışan bir sesli takvim uygulamasıdır.
+      \nBu uygulama aracılığıyla etkinlik oluşturabilir, varolan etkinlikleri düzenleyebilir veya silebilirsiniz. Bu işlemleri gerçekleştirmek ana ekranda mikrofon butonuna basarak komut verebilirsiniz.
+
+      \nEtkinlik oluşturmak için \"etkinlik oluştur\", \"toplantı ayarla\" gibi komutlar verebilirsiniz. Bu komut ile birlikte tarih veya saat bilgisi de verebilirsiniz.
+      \n
+      \nSaat bilgisi içeren bazı örnek komutlar şunlardır.
+      \n\"Saat dokuzu çeyrek geçeye toplantı oluştur\"
+      \n\"Gece on yirmiye yemek ayarla\"
+      \n\"Sabah on bir buçuğa etkinlik kur\"
+\n
+      \nTarih bilgisi içeren bazı örnek komutlar şunlardır.
+      \n\"Bugün sekiz buçuğa toplantı oluştur\"
+      \n\"Gelecek çarşamba gününe yemek ayarla\"
+      \n\"29 Ekim\'e etkinlik oluştur\"
+\n
+      \nVarolan bir etkinliği değiştirmek için \"toplantıyı değiştir\", \"etkinliği düzelt\" gibi komutları kullanabilirsiniz.
+
+  </string>
+
+    <string name="helptitle"> Yaver Yardım Ekranı</string>
+</resources>

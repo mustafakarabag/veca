@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ee492.vecaapp.veca.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="37dp"
+        android:id="@+id/tResult"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:text="Siz: " />
+
+    <Button
+        android:text="Hatırlatıcı Kur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/setReminderScreen"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/whiteCircle"
+        android:visibility="gone" />
+
+    <Button
+        android:text="Hatırlatıcı Kur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/modifyReminderScreen"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/whiteCircle"
+        android:visibility="gone" />
+
+    <Button
+        android:text="Hatırlatıcı Kur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deleteReminderScreen"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/whiteCircle"
+        android:visibility="gone" />
+
+    <Button
+        android:text="Hatırlatıcı Kur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/showReminderScreen"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/whiteCircle"
+        android:visibility="gone" />
+
+
+    <Button
+        android:text="Etkinlik Ayarla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/setEventScreen"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/micButton"
+        android:layout_alignRight="@+id/modifyEventScreen"
+        android:layout_alignEnd="@+id/modifyEventScreen"
+        android:visibility="gone" />
+
+    <Button
+        android:text="false Command"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/setReminderScreen"
+        android:layout_toLeftOf="@+id/micButton"
+        android:layout_toStartOf="@+id/micButton"
+        android:layout_marginRight="106dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="32dp"
+        android:visibility="gone"
+        android:id="@+id/falseCommand" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tResult"
+        android:layout_marginTop="40dp"
+        android:id="@+id/tResponse"
+        android:textSize="18sp"
+        android:text="Yaver: " />
+
+    <Button
+        android:text="Etkinlik Değiştir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/modifyEventScreen"
+        android:layout_marginBottom="13dp"
+        android:layout_above="@+id/setEventScreen"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/whiteCircle"
+        android:layout_toStartOf="@+id/whiteCircle"
+        android:visibility="gone" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/operationSpinner"
+        android:entries="@array/operation_spinner_array"
+        android:spinnerMode="dialog"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/spinnerSelected"
+        android:layout_toStartOf="@+id/spinnerSelected"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/presence_audio_busy"
+        android:id="@+id/micButton"
+        android:onClick="buttonMic"
+        android:background="@android:color/transparent"
+        android:scaleX="5"
+        android:scaleY="5"
+        android:translationZ="2dp"
+        android:layout_above="@+id/spinnerSelected"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="75dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/presence_audio_online"
+        android:id="@+id/micButtonActive"
+        android:visibility="invisible"
+        android:background="@android:color/transparent"
+        android:scaleX="5"
+        android:scaleY="5"
+        android:translationZ="2dp"
+        android:layout_alignTop="@+id/micButton"
+        android:layout_alignLeft="@+id/micButton"
+        android:layout_alignStart="@+id/micButton" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/dg_circle"
+        android:id="@+id/whiteCircle"
+        android:background="@android:color/transparent"
+        android:visibility="visible"
+        android:scaleX="4"
+        android:scaleY="4"
+        android:translationZ="1dp"
+        android:elevation="0dp"
+        android:layout_marginBottom="67dp"
+        android:layout_above="@+id/spinnerSelected"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="false" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/proceed"
+        android:id="@+id/spinnerSelected"
+        android:background="@android:color/transparent"
+        android:onClick="buttonSpinner"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/whiteCircle"
+        android:layout_toRightOf="@+id/tResponse"
+        android:layout_toEndOf="@+id/tResponse"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginBottom="57dp"
+        android:id="@+id/deleteEventScreen"
+        android:visibility="gone" />
+
+    <TextView
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/modifyEventScreen"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tSpeaking" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/gear_icon_gray"
+        android:id="@+id/imageButton2"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/helpButton"
+        android:layout_alignBottom="@+id/helpButton"
+        android:onClick="buttonSettings" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/q_mark"
+        android:id="@+id/helpButton"
+        android:background="@android:color/transparent"
+        android:onClick="buttonHelp"
+        android:layout_below="@+id/modifyEventScreen"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
