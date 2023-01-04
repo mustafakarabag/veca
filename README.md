@@ -18,17 +18,21 @@ The app is designed as a voice enabled calendar assistant in Turkish. Features i
 
 <img src="https://user-images.githubusercontent.com/83938892/210668731-2e9ed79b-e7ad-4d53-b926-c703758384c4.png" width=30% height=30%> 
 
-*Making a date change"
+*Making a date change*
+
 <img src="https://user-images.githubusercontent.com/83938892/210668801-d43b7455-2e1e-43c3-9313-cd97c7ff615e.png" width=30% height=30%> 
 
 *Listing existing events to be modified*
+
 <img src="https://user-images.githubusercontent.com/83938892/210668888-4510ebfb-26b9-4e03-ba37-219a9c0ecf19.png" width=30% height=30%> 
 
 *Warning screen when the event to be created overlaps with an existing event*
+
 <img src="https://user-images.githubusercontent.com/83938892/210668990-7a424cbd-2141-4c6e-8f66-502b4b1979e9.png" width=30% height=30%> 
 
 *State machine to save an event*
-<img src="https://user-images.githubusercontent.com/83938892/210670590-d61fc8a4-723e-47d1-94b4-8c0864ad3c90.png" width=30% height=30%> 
+
+<img src="https://user-images.githubusercontent.com/83938892/210670590-d61fc8a4-723e-47d1-94b4-8c0864ad3c90.png" width=60% height=60%> 
 
 
 
